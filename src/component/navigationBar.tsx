@@ -10,10 +10,18 @@ interface pageLocation {
 }
 
 function NavigationBar({ data }: pageLocation) {
+	const [MenuState, setMenuState] = useState(false);
 	$(document).ready(function () {
+		$(".nav_burger_menu_container").click(function () {
+			if (MenuState) {
+				$(this).children().removeClass("active");
+				setMenuState(!MenuState);
+			} else {
+				$(this).children().addClass("active");
+				setMenuState(!MenuState);
+			}
+		});
 		$("li a").click(function () {
-			console.log("in");
-
 			$(this).parent().siblings().removeClass("active");
 
 			$(this).parent().addClass("active");
@@ -22,8 +30,11 @@ function NavigationBar({ data }: pageLocation) {
 	return (
 		<div className='nav_container'>
 			<div className='nav_flex_element'>
-				<div className='nav_burger_menu'>
-					<MenuIcon />
+				<div className='nav_burger_menu_container'>
+					{/* <MenuIcon /> */}
+					<div className='nav_burger_menu1'></div>
+					<div className='nav_burger_menu2'></div>
+					<div className='nav_burger_menu3'></div>
 				</div>
 				<div className='nav_logo_container'></div>
 				<ul className='nav_pages'>
@@ -38,6 +49,9 @@ function NavigationBar({ data }: pageLocation) {
 					</li>
 					<li className='About'>
 						<a>About</a>
+					</li>
+					<li className='Contact'>
+						<a>Contact</a>
 					</li>
 					<div className='nav_underline'></div>
 				</ul>

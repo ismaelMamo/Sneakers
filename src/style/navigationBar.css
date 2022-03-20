@@ -1,7 +1,7 @@
 body,
 html {
 	box-sizing: border-box;
-	min-width: 450px;
+	min-width: 350px;
 }
 .nav_container {
 	display: flex;
@@ -20,7 +20,7 @@ html {
 	flex-direction: row;
 }
 
-.nav_burger_menu {
+.nav_burger_menu_container {
 	display: none;
 	justify-content: center;
 	align-items: center;
@@ -37,7 +37,7 @@ html {
 
 .nav_pages {
 	margin: 0 auto;
-	width: 23rem;
+	width: 28.5rem;
 }
 .Men.active ~ .nav_underline {
 	margin-left: 5.7rem;
@@ -47,6 +47,9 @@ html {
 }
 .About.active ~ .nav_underline {
 	margin-left: 17.1rem;
+}
+.Contact.active ~ .nav_underline {
+	margin-left: 22.8rem;
 }
 
 ul li {
@@ -95,41 +98,54 @@ a {
 	text-decoration: none;
 	color: #333;
 }
-/* 
-@media (min-width: 970px) and (max-width: 980px) {
-	.nav_burger_menu {
-		display: none;
+@media (min-width: 500px) and (max-width: 912px) {
+	.nav_burger_menu_container {
+		display: block;
+		height: 2rem;
 		justify-content: center;
 		align-items: center;
-		width: 0%;
+		cursor: pointer;
+		width: 5rem;
+	}
+	.nav_burger_menu1,
+	.nav_burger_menu2,
+	.nav_burger_menu3 {
+		width: 25px;
+		height: 4px;
+		margin: 3px;
+		background-color: rgb(88, 88, 88);
+		transition: all 0.5s ease-in-out;
+	}
+	.nav_burger_menu1.active {
+		margin-top: 10px;
+		transform: rotate(45deg);
 	}
 
-	.nav_space {
-		width: 20%;
+	.nav_burger_menu2.active {
+		margin-right: 25px;
+		background: transparent;
+	}
+	.nav_burger_menu3.active {
+		margin-top: -14px;
+		transform: rotate(-45deg);
+	}
+	.nav_flex_element {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
 	}
 
 	.nav_logo_container {
 		height: 2rem;
 		background-color: tomato;
 		width: 15rem;
+		margin-left: -3rem;
 	}
 
-	.nav_profile {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 15rem;
-		height: 5rem;
-	}
-
-	.Men.active ~ .nav_underline {
-		margin-left: 5.7rem;
-	}
-	.Women.active ~ .nav_underline {
-		margin-left: 11.4rem;
-	}
-	.About.active ~ .nav_underline {
-		margin-left: 17.1rem;
+	.nav_pages {
+		display: none;
+		margin: 0 auto;
+		width: 0rem;
 	}
 
 	ul li {
@@ -179,84 +195,15 @@ a {
 		color: #333;
 	}
 }
-@media (min-width: 600px) and (max-width: 970px) {
-	.nav_burger_menu {
-		display: none;
-		justify-content: center;
-		align-items: center;
-		width: 0%;
-	}
 
+@media (max-width: 499.9px) {
 	.nav_logo_container {
 		height: 2rem;
 		background-color: tomato;
-		width: 15rem;
+		width: 2rem;
+		margin-left: -3rem;
 	}
-	.nav_space {
-		width: 0%;
-	}
-
-	.nav_profile {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 13%;
-		height: 5rem;
-	}
-	.Men.active ~ .nav_underline {
-		margin-left: 5.7rem;
-	}
-	.Women.active ~ .nav_underline {
-		margin-left: 11.4rem;
-	}
-	.About.active ~ .nav_underline {
-		margin-left: 17.1rem;
-	}
-
-	ul li {
-		display: inline;
-		text-align: center;
-		cursor: pointer;
-	}
-	.nav_underline {
-		bottom: 0;
-		height: 0.25rem;
-		display: block;
-		width: 5.7rem;
-		background: tomato;
-		border: none;
-		transition: 0.3s ease-in-out;
-	}
-	.nav_cart {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 5rem;
-	}
-
-	.nav_profile {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 5rem;
-		height: 5rem;
-	}
-
-	.img_profile {
-		height: 3rem;
-	}
-
-	a {
-		display: inline-block;
-		width: 5.1rem;
-		padding: 1.2rem 0;
-		margin: 0 0.3rem;
-		text-decoration: none;
-		color: #333;
-	}
-}*/
-@media (max-width: 807px) {
-	.nav_burger_menu {
+	.nav_burger_menu_container {
 		display: inline;
 		justify-content: center;
 		align-items: center;
@@ -267,14 +214,6 @@ a {
 		justify-content: space-between;
 		flex-direction: row;
 	}
-
-	.nav_logo_container {
-		height: 2rem;
-		background-color: tomato;
-		width: 15rem;
-		margin-left: -3rem;
-	}
-
 	.nav_pages {
 		display: none;
 		margin: 0 auto;
@@ -287,13 +226,7 @@ a {
 		cursor: pointer;
 	}
 	.nav_underline {
-		bottom: 0;
-		height: 0.25rem;
-		display: block;
-		width: 5.7rem;
-		background: tomato;
-		border: none;
-		transition: 0.3s ease-in-out;
+		display: none;
 	}
 
 	.nav_space {
