@@ -1,3 +1,31 @@
-.navigationBar {
-	height: 4rem;
+.home_container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.home_body_container {
+	height: 100%;
+	background: rgb(0, 195, 255);
+	overflow: hidden;
+	filter: blur(0);
+	transition: blur 0.2s ease-in-out;
+}
+
+.side_menu {
+	height: 500px;
+	width: 200px;
+	margin-left: -500px;
+	background: rgb(255, 255, 255);
+	position: absolute;
+	z-index: 1;
+	transition: margin-left 0.3s ease-in-out;
+}
+
+@media (max-width: 912px) {
+	.home_body_container.active > * {
+		filter: blur(1.5rem);
+	}
+	.side_menu.active {
+		margin-left: 0px;
+	}
 }

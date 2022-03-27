@@ -112,21 +112,31 @@ a {
 	.nav_burger_menu3 {
 		width: 25px;
 		height: 4px;
-		margin: 3px;
-		background-color: rgb(88, 88, 88);
-		transition: all 0.5s ease-in-out;
+		margin: 5px;
+		background: rgb(88, 88, 88);
+		transform: rotate(0deg);
+		transition: transform 0.5s ease-in-out, margin 0.5s ease-in-out,
+			background 0.5s ease-in-out, width 0.5s ease-in-out;
+	}
+
+	.nav_burger_menu1 {
+		transform-origin: top left;
+	}
+	.nav_burger_menu3 {
+		transform-origin: bottom left;
 	}
 	.nav_burger_menu1.active {
-		margin-top: 10px;
+		width: 27.8px;
+		transform-origin: top left;
 		transform: rotate(45deg);
 	}
 
 	.nav_burger_menu2.active {
-		margin-right: 25px;
 		background: transparent;
 	}
 	.nav_burger_menu3.active {
-		margin-top: -14px;
+		width: 27.8px;
+		transform-origin: bottom left;
 		transform: rotate(-45deg);
 	}
 	.nav_flex_element {
@@ -197,6 +207,46 @@ a {
 }
 
 @media (max-width: 499.9px) {
+	.nav_burger_menu_container {
+		display: block;
+		height: 2rem;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		width: 5rem;
+	}
+	.nav_burger_menu1,
+	.nav_burger_menu2,
+	.nav_burger_menu3 {
+		width: 25px;
+		height: 4px;
+		margin: 5px;
+		background: rgb(88, 88, 88);
+		transform: rotate(0deg);
+		transition: transform 0.5s ease-in-out, margin 0.5s ease-in-out,
+			background 0.5s ease-in-out, width 0.5s ease-in-out;
+	}
+
+	.nav_burger_menu1 {
+		transform-origin: top left;
+	}
+	.nav_burger_menu3 {
+		transform-origin: bottom left;
+	}
+	.nav_burger_menu1.active {
+		width: 27.8px;
+		transform-origin: top left;
+		transform: rotate(45deg);
+	}
+
+	.nav_burger_menu2.active {
+		background: transparent;
+	}
+	.nav_burger_menu3.active {
+		width: 27.8px;
+		transform-origin: bottom left;
+		transform: rotate(-45deg);
+	}
 	.nav_logo_container {
 		height: 2rem;
 		background-color: tomato;
