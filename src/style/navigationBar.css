@@ -1,7 +1,6 @@
 body,
 html {
 	box-sizing: border-box;
-	min-width: 350px;
 }
 .nav_container {
 	display: flex;
@@ -30,8 +29,10 @@ html {
 
 .nav_logo_container {
 	height: 2rem;
-	background-color: tomato;
 	width: 15rem;
+	display: flex;
+	display: grid;
+	place-items: center;
 	margin-left: 1rem;
 }
 
@@ -75,6 +76,7 @@ ul li {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	cursor: pointer;
 	width: 5rem;
 }
 
@@ -88,6 +90,7 @@ ul li {
 
 .img_profile {
 	height: 3rem;
+	cursor: pointer;
 }
 
 a {
@@ -128,6 +131,7 @@ a {
 	.nav_burger_menu1.active {
 		width: 27.8px;
 		transform-origin: top left;
+		background: tomato;
 		transform: rotate(45deg);
 	}
 
@@ -137,6 +141,7 @@ a {
 	.nav_burger_menu3.active {
 		width: 27.8px;
 		transform-origin: bottom left;
+		background: tomato;
 		transform: rotate(-45deg);
 	}
 	.nav_flex_element {
@@ -147,8 +152,10 @@ a {
 
 	.nav_logo_container {
 		height: 2rem;
-		background-color: tomato;
-		width: 15rem;
+		width: 11rem;
+		display: flex;
+		display: grid;
+		place-items: center;
 		margin-left: -3rem;
 	}
 
@@ -181,6 +188,7 @@ a {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		cursor: pointer;
 		width: 5rem;
 	}
 
@@ -194,6 +202,7 @@ a {
 
 	.img_profile {
 		height: 3rem;
+		cursor: pointer;
 	}
 
 	a {
@@ -237,6 +246,7 @@ a {
 		width: 27.8px;
 		transform-origin: top left;
 		transform: rotate(45deg);
+		background: tomato;
 	}
 
 	.nav_burger_menu2.active {
@@ -245,13 +255,16 @@ a {
 	.nav_burger_menu3.active {
 		width: 27.8px;
 		transform-origin: bottom left;
+		background: tomato;
 		transform: rotate(-45deg);
 	}
 	.nav_logo_container {
 		height: 2rem;
-		background-color: tomato;
-		width: 2rem;
-		margin-left: -3rem;
+		width: 7rem;
+		display: flex;
+		display: grid;
+		place-items: center;
+		margin-left: -1.85rem;
 	}
 	.nav_burger_menu_container {
 		display: inline;
@@ -287,6 +300,7 @@ a {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		cursor: pointer;
 		width: 5rem;
 	}
 
@@ -300,6 +314,7 @@ a {
 
 	.img_profile {
 		height: 3rem;
+		cursor: pointer;
 	}
 
 	a {

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "../style/navigationBar.css";
 import { ReactComponent as CartIcon } from "../images/icon-cart.svg";
-import { ReactComponent as MenuIcon } from "../images/icon-menu.svg";
+import { ReactComponent as Logo } from "../images/logo.svg";
 import profile from "../images/image-avatar.png";
 
 interface pageLocation {
@@ -52,7 +52,9 @@ function NavigationBar({ data, func }: pageLocation) {
 					<div className='nav_burger_menu2'></div>
 					<div className='nav_burger_menu3'></div>
 				</div>
-				<div className='nav_logo_container'></div>
+				<div className='nav_logo_container'>
+					<Logo />
+				</div>
 				<ul className='nav_pages'>
 					<li
 						onClick={() => changeUnderline("Collection")}
