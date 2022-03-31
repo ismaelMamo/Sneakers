@@ -1,0 +1,24 @@
+[
+	{
+		"id": "1",
+		"name": "Shoe one",
+		"img": [
+			{
+				"display": "../image/image-product-1.jpg",
+				"preview": "../image/image-product-1-thumbnail.jpg"
+			},
+			{
+				"display": "../image/image-product-2.jpg",
+				"preview": "../image/image-product-2-thumbnail.jpg"
+			},
+			{
+				"display": "../image/image-product-3.jpg",
+				"preview": "../image/image-product-3-thumbnail.jpg"
+			},
+			{
+				"display": "../image/image-product-4.jpg",
+				"preview": "../image/image-product-4-thumbnail.jpg"
+			}
+		]
+	}
+]

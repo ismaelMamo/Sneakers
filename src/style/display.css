@@ -1,6 +1,14 @@
 .main_img_container {
-	height: 600px;
-	width: 600px;
+	width: 80%;
+	min-width: 400px;
+	aspect-ratio: auto 3/ 4;
+	margin-top: 5rem;
+	margin-left: 30%;
 	background-color: rgb(113, 255, 19);
+}
+.main_img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
 	border-radius: 10px;
 }
