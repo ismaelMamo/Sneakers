@@ -5,38 +5,42 @@ import "../style/display.css";
 type Sneakers = {
 	id: string;
 	name: string;
-	img: { display: string; preview: string }[];
+	img: { preview: string }[];
 }[];
 type PrevImages = { display: string; preview: string }[];
 
 function Display() {
-	const [Images, setImages] = useState("../images/image-product-1.jpg");
+	const [Images, setImages] = useState("");
 	const [PrvImages, setPrvImages]: any[] = useState([]);
 
-	let Data: Sneakers = [];
+	const [Data, setData] = useState<Sneakers | undefined>([]);
 	useEffect(() => {
-		Data = data;
-		//Should retrieve already formate data
-		// let temp: PrevImages = Data[0].img;
-		// temp.forEach((element) => {
-		// 	setPrvImages(...PrvImages, require(element.preview.toString()));
-		// 	console.log(require(element.preview));
-		// });
-		// console.log(PrvImages);
-	}, [Images, setPrvImages]);
+		//Data = data;
+		setData(data);
+		setImages(data?.[0]?.img?.[0]?.preview);
+	}, [Data]);
+
+	function changeDisplay(src: string) {
+		setImages(src);
+	}
 
 	return (
-		<div className='display_container'>
-			<div className='main_img_container'>
-				<img src={`Images`.toString()} className='main_img' />
+		<div className='main_img_container'>
+			<img src={Images} className='main_img' />
+			<div className='preview_img_container'>
+				{Data?.[0]?.img?.map((data, index) => {
+					console.log(index);
+					let prvClass = "preview_imags" + index;
+					return (
+						<img
+							onClick={() => changeDisplay(data.preview)}
+							key={index}
+							src={data.preview}
+							className={prvClass}
+						/>
+					);
+				})}
 			</div>
-			<div>
-				{/* {Data[0].img.map((data) => {
-					console.log(data.preview);
-					return <img src={data.preview} />;
-				})} */}
-			</div>
-			<div className='preview_img'></div>
 		</div>
 	);
 }
