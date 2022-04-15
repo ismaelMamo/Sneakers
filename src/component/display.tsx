@@ -6,18 +6,25 @@ type Sneakers = {
 	id: string;
 	name: string;
 	img: { preview: string }[];
-}[];
+	info: {
+		company: string;
+		name: string;
+		description: string;
+		price: number;
+		deal: number;
+	};
+};
 type PrevImages = { display: string; preview: string }[];
 
 function Display() {
 	const [Images, setImages] = useState("");
 	const [PrvImages, setPrvImages]: any[] = useState([]);
 
-	const [Data, setData] = useState<Sneakers | undefined>([]);
+	const [Data, setData] = useState<Sneakers | undefined>();
 	useEffect(() => {
 		//Data = data;
 		setData(data);
-		setImages(data?.[0]?.img?.[0]?.preview);
+		setImages(data?.img?.[0]?.preview);
 	}, [Data]);
 
 	function changeDisplay(src: string) {
@@ -28,8 +35,7 @@ function Display() {
 		<div className='main_img_container'>
 			<img src={Images} className='main_img' />
 			<div className='preview_img_container'>
-				{Data?.[0]?.img?.map((data, index) => {
-					console.log(index);
+				{Data?.img?.map((data, index) => {
 					let prvClass = "preview_imags" + index;
 					return (
 						<img

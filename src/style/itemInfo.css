@@ -1,0 +1,38 @@
+.info_container {
+	width: 60%;
+	height: 70%;
+	margin-top: 5rem;
+	margin-left: 15%;
+	display: flex;
+	justify-content: space-around;
+	align-items: left;
+	flex-direction: column;
+}
+.company {
+	color: tomato;
+}
+.name {
+	font-size: 250%;
+	font-weight: bolder;
+}
+.description {
+	color: rgb(104, 104, 104);
+	overflow: wrap;
+}
+.current_price {
+	display: inline;
+}
+.deal {
+	height: 100%;
+	display: inline;
+	padding: 0rem 0.5rem 0rem 0.5rem;
+	margin-left: 1rem;
+	font-size: 80%;
+	background-color: rgb(255, 222, 217);
+	color: tomato;
+	border-radius: 5px;
+}
+.price {
+	text-decoration: line-through;
+	color: rgb(104, 104, 104);
+}
