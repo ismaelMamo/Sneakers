@@ -1,6 +1,6 @@
 .info_container {
 	width: 60%;
-	height: 70%;
+	height: 50%;
 	margin-top: 5rem;
 	margin-left: 15%;
 	display: flex;
@@ -12,22 +12,25 @@
 	color: tomato;
 }
 .name {
-	font-size: 250%;
+	font-size: 350%;
 	font-weight: bolder;
 }
 .description {
 	color: rgb(104, 104, 104);
+	font-size: 125%;
 	overflow: wrap;
 }
 .current_price {
 	display: inline;
+	font-size: 200%;
+	font-weight: bold;
 }
 .deal {
 	height: 100%;
 	display: inline;
 	padding: 0rem 0.5rem 0rem 0.5rem;
 	margin-left: 1rem;
-	font-size: 80%;
+	font-size: 125%;
 	background-color: rgb(255, 222, 217);
 	color: tomato;
 	border-radius: 5px;
@@ -35,4 +38,46 @@
 .price {
 	text-decoration: line-through;
 	color: rgb(104, 104, 104);
+}
+.action_container {
+	width: 20rem;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+.quantity_container {
+	display: flex;
+	flex-direction: row;
+}
+.quantity {
+	width: 2rem;
+	height: 2rem;
+	background: rgb(230, 230, 230);
+	font-size: 110%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.quantity_minus,
+.quantity_plus {
+	cursor: pointer;
+	user-select: none;
+	width: 2rem;
+	height: 2rem;
+	font-size: 110%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: tomato;
+	background: rgb(224, 224, 224);
+}
+.btn_add_cart {
+	width: 13rem;
+	height: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background-color: tomato;
+	border-radius: 5px;
 }
