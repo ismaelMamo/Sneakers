@@ -14,11 +14,9 @@ type Sneakers = {
 		deal: number;
 	};
 };
-type PrevImages = { display: string; preview: string }[];
 
 function Display() {
 	const [Images, setImages] = useState("");
-	const [PrvImages, setPrvImages]: any[] = useState([]);
 
 	const [Data, setData] = useState<Sneakers | undefined>();
 	useEffect(() => {

@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import "../style/home.css";
 
 import NavigationBar from "../component/navigationBar";
@@ -6,7 +5,8 @@ import Display from "../component/display";
 import ItemInfo from "../component/itemInfo";
 
 function Home() {
-	const page: string = "";
+	//future tracking use
+	//const page: string = "";
 
 	function menuClickHandler(params: boolean) {
 		let blurElement = document.getElementById("home_body_container")!;

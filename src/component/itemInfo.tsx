@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import data from "../data/sneakers_data.json";
 
-import { ReactComponent as CartIcon } from "../images/icon-cart.svg";
-
 import "../style/itemInfo.css";
 
 type Sneakers = {
@@ -29,7 +27,6 @@ function ItemInfo() {
 		}
 	}, [Info, CurrentPrice, Deal, Price]);
 
-	function changeDisplay(src: string) {}
 	function AddQuantity() {
 		setQuantity(Quantity + 1);
 	}
