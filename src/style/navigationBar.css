@@ -93,7 +93,7 @@ ul li {
 	cursor: pointer;
 }
 
-a {
+.link {
 	display: inline-block;
 	width: 5.1rem;
 	padding: 1.2rem 0;
@@ -153,10 +153,10 @@ a {
 	.nav_logo_container {
 		height: 2rem;
 		width: 11rem;
+		margin-left: -1.5rem;
 		display: flex;
 		display: grid;
 		place-items: center;
-		margin-left: -3rem;
 	}
 
 	.nav_pages {
@@ -203,15 +203,6 @@ a {
 	.img_profile {
 		height: 3rem;
 		cursor: pointer;
-	}
-
-	a {
-		display: inline-block;
-		width: 5.1rem;
-		padding: 1.2rem 0;
-		margin: 0 0.3rem;
-		text-decoration: none;
-		color: #333;
 	}
 }
 
@@ -261,10 +252,10 @@ a {
 	.nav_logo_container {
 		height: 2rem;
 		width: 7rem;
+		margin-left: -1rem;
 		display: flex;
 		display: grid;
 		place-items: center;
-		margin-left: -1.85rem;
 	}
 	.nav_burger_menu_container {
 		display: inline;
@@ -315,14 +306,5 @@ a {
 	.img_profile {
 		height: 3rem;
 		cursor: pointer;
-	}
-
-	a {
-		display: inline-block;
-		width: 5.1rem;
-		padding: 1.2rem 0;
-		margin: 0 0.3rem;
-		text-decoration: none;
-		color: #333;
 	}
 }

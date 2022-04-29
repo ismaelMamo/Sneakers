@@ -1,8 +1,9 @@
 import { useState } from "react";
-import "../style/navigationBar.css";
+import { Link } from "react-router-dom";
 import { ReactComponent as CartIcon } from "../images/icon-cart.svg";
 import { ReactComponent as Logo } from "../images/logo.svg";
 import profile from "../images/image-avatar.png";
+import "../style/navigationBar.css";
 
 interface pageLocation {
 	data: string;
@@ -53,7 +54,9 @@ function NavigationBar({ data, func }: pageLocation) {
 					<div className='nav_burger_menu3'></div>
 				</div>
 				<div className='nav_logo_container'>
-					<Logo />
+					<Link className='nav_logo_container' to='/'>
+						<Logo />
+					</Link>
 				</div>
 				<ul className='nav_pages'>
 					<li
@@ -61,31 +64,41 @@ function NavigationBar({ data, func }: pageLocation) {
 						id='Collection'
 						className='Collection'
 					>
-						<a>Collection</a>
+						<Link className='link' to='/Collection'>
+							Collection
+						</Link>
 					</li>
 					<li onClick={() => changeUnderline("Men")} id='Men' className='Men'>
-						<a>Men</a>
+						<Link className='link' to='/Men'>
+							Men
+						</Link>
 					</li>
 					<li
 						onClick={() => changeUnderline("Women")}
 						id='Women'
 						className='Women'
 					>
-						<a>Women</a>
+						<Link className='link' to='/Women'>
+							Women
+						</Link>
 					</li>
 					<li
 						onClick={() => changeUnderline("About")}
 						id='About'
 						className='About'
 					>
-						<a>About</a>
+						<Link className='link' to='/About'>
+							About
+						</Link>
 					</li>
 					<li
 						onClick={() => changeUnderline("Contact")}
 						id='Contact'
 						className='Contact'
 					>
-						<a>Contact</a>
+						<Link className='link' to='/Contact'>
+							Contact
+						</Link>
 					</li>
 					<div className='nav_underline'></div>
 				</ul>

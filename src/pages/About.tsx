@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import navigationBar from "../component/navigationBar";
+//import { useState, useEffect } from "react";
 
 function About() {
 	return <div>About</div>;
