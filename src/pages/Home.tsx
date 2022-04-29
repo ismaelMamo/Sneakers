@@ -1,29 +1,15 @@
 import "../style/home.css";
 
-import NavigationBar from "../component/navigationBar";
 import Display from "../component/display";
 import ItemInfo from "../component/itemInfo";
 
 function Home() {
 	//future tracking use
 	//const page: string = "";
-
-	function menuClickHandler(params: boolean) {
-		let blurElement = document.getElementById("home_body_container")!;
-		let menuElement = document.getElementById("side_menu")!;
-		if (params) {
-			blurElement.classList.remove("active");
-			menuElement.classList.remove("active");
-		} else {
-			blurElement.classList.add("active");
-			menuElement.classList.add("active");
-		}
-	}
 	function navigate(params: string) {}
 
 	return (
 		<div className='home_container'>
-			<NavigationBar func={menuClickHandler} data='Home' />
 			<div>
 				<div id='side_menu' className='side_menu'>
 					<ul className='nav_menu'>
