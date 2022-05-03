@@ -1,6 +1,6 @@
 .info_container {
 	width: 60%;
-	height: 50%;
+	height: 60%;
 	margin-top: 5rem;
 	margin-left: 15%;
 	display: flex;
@@ -80,4 +80,17 @@
 	color: white;
 	background-color: tomato;
 	border-radius: 5px;
+}
+@media (max-width: 912px) {
+	.info_container {
+		width: 60%;
+		height: 100%;
+		margin-top: 0%;
+		margin-left: 0%;
+		overflow: visible;
+		display: flex;
+		justify-content: space-around;
+		align-items: left;
+		flex-direction: column;
+	}
 }

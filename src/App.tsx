@@ -16,10 +16,10 @@ function App() {
 		}
 	}
 	return (
-		<>
+		<div className='main_body'>
 			<NavigationBar func={menuClickHandler} data='Home' />
-			<RoutHandler />;
-		</>
+			<RoutHandler />
+		</div>
 	);
 }
 
