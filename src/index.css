@@ -16,9 +16,7 @@ html {
 	box-sizing: border-box;
 }
 html,
-body,
-#app,
-#app > div {
+body {
 	height: 100%;
 }
 #root {
