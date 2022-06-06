@@ -74,6 +74,7 @@
 .btn_add_cart {
 	width: 13rem;
 	height: 2rem;
+	cursor: pointer;
 	display: flex;
 	justify-content: center;
 	align-items: center;
