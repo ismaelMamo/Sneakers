@@ -16,6 +16,8 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	height: 95%;
+	width: 100%;
 	margin-bottom: 5%;
 }
 .image_container {
