@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect } from "react";
 
 import "../style/overlay.css";
 import left from "../images/icon-previous.svg";
@@ -7,12 +7,24 @@ import right from "../images/icon-next.svg";
 interface imageCarousel {
 	url: string;
 	func: (params: string) => string;
+	active: string;
 }
 
-function Overlay({ url, func }: imageCarousel) {
+function Overlay({ url, func, active }: imageCarousel) {
+	useEffect(() => {
+		let element = document.getElementById("popup_container")!;
+		if (active === "off") {
+			element.classList.add("hide");
+		} else {
+			element.classList.remove("hide");
+		}
+	}, [active]);
+
 	return (
-		<div className='popup_container'>
-			<div>&times;</div>
+		<div id='popup_container' className='popup_container'>
+			<div className='closer' onClick={() => func("close")}>
+				&times;
+			</div>
 
 			<div className='main_body_container'>
 				<img

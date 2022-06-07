@@ -48,6 +48,11 @@
 .right_display {
 	width: 55%;
 }
+.overlay {
+}
+.overlay.hide {
+	display: block;
+}
 @media (max-width: 912px) {
 	.main_body {
 		overflow: visible;

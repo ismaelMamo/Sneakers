@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "../style/home.css";
 
 import Display from "../component/display";
@@ -6,37 +6,40 @@ import ItemInfo from "../component/itemInfo";
 import Overlay from "../component/overlay";
 import data from "../data/sneakers_data.json";
 
-type Sneakers = {
-	id: string;
-	name: string;
-	img: { preview: string }[];
-	info: {
-		company: string;
-		name: string;
-		description: string;
-		price: number;
-		deal: number;
-	};
-
-	popFunc: (params: number) => void;
-};
-type popFunc = { func: (params: number) => void };
-
 function Home() {
 	//future tracking use
 	//const page: string = "";
 	function navigate(params: string) {}
-	const [InitialPopupUrl, setInitialPopupUrl] = useState("");
+	const [PopupUrl, setPopupUrl] = useState("");
+	const [PopupUrlIndex, setPopupUrlIndex] = useState(0);
+	const [OverlayState, setOverlayState] = useState("off");
 
 	function currentDisplay(params: number): void {
-		console.log(data?.img[params]?.preview);
-
-		setInitialPopupUrl(data?.img[params]?.preview);
+		setPopupUrlIndex(params);
+		setPopupUrl(data?.img[params]?.preview);
+		setOverlayState("on");
 	}
 
 	function rotatePopup(params: string) {
 		let url = "";
-		if (params == "left") {
+		if (params === "left") {
+			if (PopupUrlIndex > 0) {
+				setPopupUrl(data?.img[PopupUrlIndex - 1]?.preview);
+				setPopupUrlIndex(PopupUrlIndex - 1);
+			} else {
+				setPopupUrl(data?.img[data.img.length - 1]?.preview);
+				setPopupUrlIndex(data.img.length - 1);
+			}
+		} else if (params === "right") {
+			if (PopupUrlIndex < data.img.length - 1) {
+				setPopupUrl(data?.img[PopupUrlIndex + 1]?.preview);
+				setPopupUrlIndex(PopupUrlIndex + 1);
+			} else {
+				setPopupUrlIndex(0);
+				setPopupUrl(data?.img[0]?.preview);
+			}
+		} else {
+			setOverlayState("off");
 		}
 		url = data?.img?.[0]?.preview;
 		return url;
@@ -81,7 +84,7 @@ function Home() {
 					<ItemInfo />
 				</div>
 			</div>
-			<Overlay func={rotatePopup} url={InitialPopupUrl} />
+			<Overlay func={rotatePopup} url={PopupUrl} active={OverlayState} />
 		</div>
 	);
 }

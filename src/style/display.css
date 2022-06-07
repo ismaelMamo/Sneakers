@@ -11,7 +11,7 @@
 	overflow: hidden;
 	object-fit: cover;
 	border-radius: 10px;
-	cursor: pointer;
+	cursor: zoom-in;
 }
 .preview_img_container {
 	width: 80%;
@@ -60,7 +60,6 @@
 		overflow: hidden;
 		object-fit: cover;
 		border-radius: 10px;
-		cursor: pointer;
 	}
 	.preview_img_container {
 		width: 80%;
