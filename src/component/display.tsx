@@ -1,43 +1,52 @@
 import { useState, useEffect } from "react";
-import data from "../data/sneakers_data.json";
 import "../style/display.css";
 
 type Sneakers = {
-	id: string;
-	name: string;
-	img: { preview: string }[];
-	info: {
-		company: string;
+	imageSrc: {
+		id: string;
 		name: string;
-		description: string;
-		price: number;
-		deal: number;
+		img: { preview: string }[];
+		info: {
+			company: string;
+			name: string;
+			description: string;
+			price: number;
+			deal: number;
+		};
 	};
+	popup: (params: number) => void;
 };
 
-function Display() {
+type popFunc = { func: (params: number) => void };
+
+function Display({ imageSrc, popup }: Sneakers) {
 	const [Images, setImages] = useState("");
+	const [ImagesIndex, setImagesIndex] = useState(0);
 
 	const [Data, setData] = useState<Sneakers | undefined>();
 	useEffect(() => {
-		//Data = data;
-		setData(data);
-		setImages(data?.img?.[0]?.preview);
-	}, [Data]);
+		setData({ imageSrc, popup });
+		setImages(imageSrc?.img?.[0]?.preview);
+	}, []);
 
-	function changeDisplay(src: string) {
+	function changeDisplay(src: string, index: number) {
 		setImages(src);
+		setImagesIndex(index);
 	}
 
 	return (
 		<div className='main_img_container'>
-			<img src={Images} className='main_img' />
+			<img
+				src={Images}
+				className='main_img'
+				onClick={() => popup(ImagesIndex)}
+			/>
 			<div className='preview_img_container'>
-				{Data?.img?.map((data, index) => {
+				{Data?.imageSrc.img?.map((data, index) => {
 					let prvClass = "preview_imags" + index;
 					return (
 						<img
-							onClick={() => changeDisplay(data.preview)}
+							onClick={() => changeDisplay(data.preview, index)}
 							key={index}
 							src={data.preview}
 							className={prvClass}
