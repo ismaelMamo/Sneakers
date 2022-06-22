@@ -1,0 +1,72 @@
+.card_main_container {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+	transition: filter 0.15s ease-in-out;
+}
+.card_main_container:hover {
+	filter: brightness(0.8) blur(0.5px);
+}
+.upper_section_container {
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	height: 90%;
+	border-radius: 1.5rem 0rem 0rem 0rem;
+}
+.card_img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.card_info_container {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	top: 5%;
+	left: 0;
+	z-index: 10;
+}
+.offer {
+	background-color: aliceblue;
+	height: 100%;
+	font-size: 100%;
+	line-height: 190%;
+	max-width: 40%;
+	text-align: center;
+	border-radius: 25%;
+	margin: 2%;
+	padding: 0% 2% 0% 2%;
+	color: rgb(255, 255, 255);
+	background-color: red;
+	font-weight: bolder;
+}
+.offer.hide {
+	display: none;
+}
+.preview_price {
+	background-color: aliceblue;
+	height: 100%;
+	font-size: 100%;
+	line-height: 190%;
+	text-align: center;
+	border-radius: 25%;
+	margin: 2%;
+	padding: 0% 2% 0% 2%;
+	font-weight: bolder;
+}
+.star_Rating {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 9%;
+	background-color: rgb(233, 233, 233);
+}
+.star {
+	size: 5%;
+}

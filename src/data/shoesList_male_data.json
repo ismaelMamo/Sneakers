@@ -1,0 +1,97 @@
+[
+	{
+		"id": "1",
+		"price": "200",
+		"promotion": "",
+		"rating": "3.0",
+		"imgUrl": "https://images.unsplash.com/photo-1579338559194-a162d19bf842?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+	},
+	{
+		"id": "2",
+		"price": "150",
+		"promotion": "SALE",
+		"rating": "4.5",
+		"imgUrl": "https://images.unsplash.com/photo-1576232823021-f3770a34df63?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTd8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+	},
+	{
+		"id": "3",
+		"price": "275",
+		"promotion": "",
+		"rating": "2.5",
+		"imgUrl": "https://images.unsplash.com/photo-1593081891731-fda0877988da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+	},
+	{
+		"id": "4",
+		"price": "90",
+		"promotion": "",
+		"rating": "5",
+		"imgUrl": "https://images.unsplash.com/photo-1603808033192-082d6919d3e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80"
+	},
+	{
+		"id": "5",
+		"price": "188",
+		"promotion": "SALE",
+		"rating": "1.5",
+		"imgUrl": "https://images.unsplash.com/photo-1597045566677-8cf032ed6634?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+	},
+	{
+		"id": "6",
+		"price": "299",
+		"promotion": "",
+		"rating": "4",
+		"imgUrl": "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+	},
+	{
+		"id": "7",
+		"price": "160",
+		"promotion": "",
+		"rating": "3.5",
+		"imgUrl": "https://images.unsplash.com/photo-1605408499391-6368c628ef42?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Nnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+	},
+	{
+		"id": "8",
+		"price": "70",
+		"promotion": "SALE",
+		"rating": "3",
+		"imgUrl": "https://images.unsplash.com/photo-1605348532760-6753d2c43329?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8N3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+	},
+	{
+		"id": "9",
+		"price": "399",
+		"promotion": "",
+		"rating": "3",
+		"imgUrl": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+	},
+
+	{
+		"id": "10",
+		"price": "149",
+		"promotion": "SALE",
+		"rating": "2.5",
+		"imgUrl": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8OXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+	},
+
+	{
+		"id": "11",
+		"price": "99",
+		"promotion": "SALE",
+		"rating": "4.5",
+		"imgUrl": "https://images.unsplash.com/photo-1584735175315-9d5df23860e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+	},
+
+	{
+		"id": "12",
+		"price": "507",
+		"promotion": "",
+		"rating": "5",
+		"imgUrl": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHNob2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+	},
+
+	{
+		"id": "13",
+		"price": "280",
+		"promotion": "SOLD OUT",
+		"rating": "4.5",
+		"imgUrl": "https://images.unsplash.com/photo-1617606003139-c55e4485f78a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+	}
+]

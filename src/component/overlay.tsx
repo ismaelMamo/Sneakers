@@ -4,11 +4,11 @@ import "../style/overlay.css";
 import left from "../images/icon-previous.svg";
 import right from "../images/icon-next.svg";
 
-interface imageCarousel {
+type imageCarousel = {
 	url: string;
 	func: (params: string) => string;
 	active: string;
-}
+};
 
 function Overlay({ url, func, active }: imageCarousel) {
 	useEffect(() => {

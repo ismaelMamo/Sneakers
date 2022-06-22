@@ -1,0 +1,62 @@
+[
+	{
+		"id": "1",
+		"price": "399",
+		"promotion": "",
+		"rating": "3",
+		"imgUrl": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+	},
+
+	{
+		"id": "2",
+		"price": "149",
+		"promotion": "SALE",
+		"rating": "2.5",
+		"imgUrl": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8OXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+	},
+
+	{
+		"id": "3",
+		"price": "99",
+		"promotion": "SALE",
+		"rating": "4.5",
+		"imgUrl": "https://images.unsplash.com/photo-1584735175315-9d5df23860e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+	},
+
+	{
+		"id": "4",
+		"price": "507",
+		"promotion": "",
+		"rating": "5",
+		"imgUrl": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHNob2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+	},
+
+	{
+		"id": "5",
+		"price": "280",
+		"promotion": "SOLD OUT",
+		"rating": "4.5",
+		"imgUrl": "https://images.unsplash.com/photo-1617606003139-c55e4485f78a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+	},
+	{
+		"id": "6",
+		"price": "299",
+		"promotion": "",
+		"rating": "4",
+		"imgUrl": "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+	},
+	{
+		"id": "7",
+		"price": "160",
+		"promotion": "",
+		"rating": "3.5",
+		"imgUrl": "https://images.unsplash.com/photo-1605408499391-6368c628ef42?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8Nnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+	},
+	{
+		"id": "8",
+		"price": "70",
+		"promotion": "SALE",
+		"rating": "3",
+		"imgUrl": "https://images.unsplash.com/photo-1605348532760-6753d2c43329?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8N3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+	}
+]
