@@ -45,26 +45,3 @@ function Router() {
 }
 
 export default Router;
-
-{
-	/*
-            
-			<Route path='/about'>
-				<About />
-			</Route>
-			<Route path='/collection'>
-				<Collection />
-			</Route>
-			<Route path='/contact'>
-				<Contact />
-			</Route>
-			<Route path='/Men'>
-				<Men />
-			</Route>
-			<Route path='/Women'>
-				<Women />
-			</Route>
-			<Route path='*'>
-				<Error />
-			</Route> */
-}
