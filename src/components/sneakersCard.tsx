@@ -16,7 +16,6 @@ function SneakersCard({ price, rating, img, promo, starSize }: cardSetting) {
 	const [PromoState, setPromoState] = useState("none");
 	useEffect(() => {
 		let element = document.getElementById("offer")!;
-		console.log("in");
 		if (promo === "none") {
 			element.classList.add("hide");
 		} else {

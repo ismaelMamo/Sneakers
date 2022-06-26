@@ -1,7 +1,8 @@
 //import { useState, useEffect } from "react";
-import SneakersCard from "../component/sneakersCard";
+import SneakersCard from "../components/sneakersCard";
+import { Link } from "react-router-dom";
 import "../style/menWoman.css";
-import data from "../data/shoesList_male_data.json";
+import data from "../data/shoesList_men_data.json";
 
 function Men() {
 	return (
@@ -11,13 +12,18 @@ function Men() {
 				{data.map((element, index) => {
 					return (
 						<div key={element.id} className='SneakersCard_container'>
-							<SneakersCard
-								price={element.price}
-								rating={parseFloat(element.rating)}
-								img={element.imgUrl}
-								starSize='medium'
-								promo={element.promotion}
-							/>
+							<Link
+								className='card_Link'
+								to={`/show?id=${element.id}&category=men`}
+							>
+								<SneakersCard
+									price={element.price}
+									rating={parseFloat(element.rating)}
+									img={element.imgUrl}
+									starSize='medium'
+									promo={element.promotion}
+								/>
+							</Link>
 						</div>
 					);
 				})}

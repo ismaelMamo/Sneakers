@@ -6,6 +6,7 @@
 	cursor: pointer;
 	transition: filter 0.15s ease-in-out;
 }
+
 .card_main_container:hover {
 	filter: brightness(0.8) blur(0.5px);
 }
@@ -30,6 +31,10 @@
 	top: 5%;
 	left: 0;
 	z-index: 10;
+}
+.card_Link {
+	text-decoration: none;
+	color: #000;
 }
 .offer {
 	background-color: aliceblue;
