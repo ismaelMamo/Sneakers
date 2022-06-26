@@ -29,7 +29,7 @@ function Router() {
 		<div>
 			<NavigationBar func={menuClickHandler} data='' />
 			<Burger />
-			<div id='home_body_container' className='home_body_container'>
+			<div id='home_body_container' className='outer_home_body_container'>
 				<Routes>
 					<Route path='/' element={<Home />} />
 					<Route path='/show' element={<Show />} />
