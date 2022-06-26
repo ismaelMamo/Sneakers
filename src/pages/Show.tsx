@@ -106,7 +106,6 @@ function Show() {
 		<>
 			{Ready ? (
 				<div className='home_container'>
-					<Burger />
 					<div id='home_body_container' className='home_body_container'>
 						<div className='left_display'>
 							<Display imageSrc={Data} popup={currentDisplay} />
