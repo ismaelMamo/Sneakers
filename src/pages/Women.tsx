@@ -1,6 +1,6 @@
-import SneakersCard from "../component/sneakersCard";
+import SneakersCard from "../components/sneakersCard";
 import "../style/menWoman.css";
-import data from "../data/shoesList_female_data.json";
+import data from "../data/shoesList_women_data.json";
 
 function Women() {
 	return (

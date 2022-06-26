@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as CartIcon } from "../images/icon-cart.svg";
 import { ReactComponent as Logo } from "../images/logo.svg";
 import profile from "../images/image-avatar.png";
 import "../style/navigationBar.css";
+import "../style/home.css";
 
 interface pageLocation {
 	data: string;
@@ -12,6 +13,11 @@ interface pageLocation {
 
 function NavigationBar({ data, func }: pageLocation) {
 	const [MenuState, setMenuState] = useState(false);
+
+	useEffect(() => {
+		changeUnderline();
+	}, []);
+
 	function animateBurgerMenu() {
 		func(MenuState);
 		let element = document.getElementById("nav_burger_menu_container")!;
@@ -30,15 +36,17 @@ function NavigationBar({ data, func }: pageLocation) {
 		}
 	}
 
-	function changeUnderline(Class: string) {
+	function changeUnderline() {
 		let elementAll = document.getElementsByTagName("li");
 
 		for (let i = 0; i < elementAll.length; i++) {
 			elementAll[i].classList.remove("active");
 		}
+		let element: HTMLElement | null = document.getElementById(
+			window.location.href.split("/")[3]
+		)!;
 
-		let element = document.getElementById(Class);
-		element?.classList.add("active");
+		element?.classList.add("active")!;
 	}
 
 	return (
@@ -53,14 +61,18 @@ function NavigationBar({ data, func }: pageLocation) {
 					<div className='nav_burger_menu2'></div>
 					<div className='nav_burger_menu3'></div>
 				</div>
-				<div className='nav_logo_container'>
+				<div
+					id='nav_logo_container'
+					className='nav_logo_container'
+					onClick={() => changeUnderline()}
+				>
 					<Link className='nav_logo_container' to='/'>
 						<Logo />
 					</Link>
 				</div>
 				<ul className='nav_pages'>
 					<li
-						onClick={() => changeUnderline("Collection")}
+						onClick={() => changeUnderline()}
 						id='Collection'
 						className='Collection'
 					>
@@ -68,31 +80,23 @@ function NavigationBar({ data, func }: pageLocation) {
 							Collection
 						</Link>
 					</li>
-					<li onClick={() => changeUnderline("Men")} id='Men' className='Men'>
+					<li onClick={() => changeUnderline()} id='Men' className='Men'>
 						<Link className='link' to='/Men'>
 							Men
 						</Link>
 					</li>
-					<li
-						onClick={() => changeUnderline("Women")}
-						id='Women'
-						className='Women'
-					>
+					<li onClick={() => changeUnderline()} id='Women' className='Women'>
 						<Link className='link' to='/Women'>
 							Women
 						</Link>
 					</li>
-					<li
-						onClick={() => changeUnderline("About")}
-						id='About'
-						className='About'
-					>
+					<li onClick={() => changeUnderline()} id='About' className='About'>
 						<Link className='link' to='/About'>
 							About
 						</Link>
 					</li>
 					<li
-						onClick={() => changeUnderline("Contact")}
+						onClick={() => changeUnderline()}
 						id='Contact'
 						className='Contact'
 					>

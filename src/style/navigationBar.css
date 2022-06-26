@@ -40,17 +40,27 @@ html {
 	margin: 0 auto;
 	width: 28.5rem;
 }
+.nav_logo_container.active ~ .nav_underline {
+}
+.Collection.active ~ .nav_underline {
+	margin-left: 0rem;
+	width: 5.7rem;
+}
 .Men.active ~ .nav_underline {
 	margin-left: 5.7rem;
+	width: 5.7rem;
 }
 .Women.active ~ .nav_underline {
 	margin-left: 11.4rem;
+	width: 5.7rem;
 }
 .About.active ~ .nav_underline {
 	margin-left: 17.1rem;
+	width: 5.7rem;
 }
 .Contact.active ~ .nav_underline {
 	margin-left: 22.8rem;
+	width: 5.7rem;
 }
 
 ul li {
@@ -62,7 +72,7 @@ ul li {
 	bottom: 0;
 	height: 0.25rem;
 	display: block;
-	width: 5.7rem;
+	width: 0rem;
 	background: tomato;
 	border: none;
 	transition: 0.3s ease-in-out;

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import navigationBar from "../component/navigationBar";
+import navigationBar from "../components/navigationBar";
 
 function Collection() {
 	return <div>Collection</div>;

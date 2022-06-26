@@ -1,7 +1,6 @@
 import "./style/main.css";
 import RoutHandler from "./RoutHandler";
-import NavigationBar from "./component/navigationBar";
-import "./style/home.css";
+import NavigationBar from "./components/navigationBar";
 
 function App() {
 	function menuClickHandler(params: boolean) {
@@ -17,7 +16,6 @@ function App() {
 	}
 	return (
 		<div className='main_body'>
-			<NavigationBar func={menuClickHandler} data='Home' />
 			<RoutHandler />
 		</div>
 	);

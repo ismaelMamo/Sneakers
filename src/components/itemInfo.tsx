@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import data from "../data/sneakers_data.json";
 
 import "../style/itemInfo.css";
 
@@ -10,8 +9,21 @@ type Sneakers = {
 	price: number;
 	deal: number;
 };
-
-function ItemInfo() {
+type propData = {
+	all: {
+		id: string;
+		name: string;
+		img: { preview: string }[];
+		info: {
+			company: string;
+			name: string;
+			description: string;
+			price: number;
+			deal: number;
+		};
+	};
+};
+function ItemInfo({ all }: propData) {
 	const [Info, setInfo] = useState<Sneakers | undefined>();
 	const [CurrentPrice, setCurrentPrice] = useState("Unavailable");
 	const [Quantity, setQuantity] = useState(0);
@@ -19,11 +31,13 @@ function ItemInfo() {
 	const [Price, setPrice] = useState("");
 
 	useEffect(() => {
-		setInfo(data.info);
+		setInfo(all.info);
 		if (Info !== undefined) {
-			setCurrentPrice(("$" + (Info.price * Info.deal).toFixed(2)).toString());
 			setDeal(100 * Info.deal + "%");
 			setPrice(Info.deal !== 1 ? "$" + Info.price.toFixed(2) : "");
+			setCurrentPrice(
+				("$" + (Info.price - Info.price * Info.deal).toFixed(2)).toString()
+			);
 		}
 	}, [Info, CurrentPrice, Deal, Price]);
 
