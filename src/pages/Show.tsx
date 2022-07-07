@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "../style/home.css";
+import "../style/show.css";
 
 import Display from "../components/display";
 import ItemInfo from "../components/itemInfo";
