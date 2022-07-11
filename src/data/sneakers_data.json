@@ -120,7 +120,207 @@
 			"company": "Shoe Factory",
 			"name": "Sumer Limited Edition Sneakers",
 			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similiqu accusantium nemo autem.",
-			"price": 150.0,
+			"price": 0.0,
+			"deal": 0.0
+		}
+	},
+	{
+		"id": "6",
+		"name": "Shoe one",
+		"img": [
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			},
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			},
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			},
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			}
+		],
+		"info": {
+			"company": "Shoe Factory",
+			"name": "Sumer Limited Edition Sneakers",
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similiqu accusantium nemo autem.",
+			"price": 0.0,
+			"deal": 0.0
+		}
+	},
+	{
+		"id": "7",
+		"name": "Shoe one",
+		"img": [
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			},
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			},
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			},
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			}
+		],
+		"info": {
+			"company": "Shoe Factory",
+			"name": "Sumer Limited Edition Sneakers",
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similiqu accusantium nemo autem.",
+			"price": 0.0,
+			"deal": 0.0
+		}
+	},
+	{
+		"id": "8",
+		"name": "Shoe one",
+		"img": [
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			},
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			},
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			},
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			}
+		],
+		"info": {
+			"company": "Shoe Factory",
+			"name": "Sumer Limited Edition Sneakers",
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similiqu accusantium nemo autem.",
+			"price": 0.0,
+			"deal": 0.0
+		}
+	},
+	{
+		"id": "9",
+		"name": "Shoe one",
+		"img": [
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			},
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			},
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			},
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			}
+		],
+		"info": {
+			"company": "Shoe Factory",
+			"name": "Sumer Limited Edition Sneakers",
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similiqu accusantium nemo autem.",
+			"price": 0.0,
+			"deal": 0.0
+		}
+	},
+	{
+		"id": "10",
+		"name": "Shoe one",
+		"img": [
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			},
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			},
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			},
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			}
+		],
+		"info": {
+			"company": "Shoe Factory",
+			"name": "Sumer Limited Edition Sneakers",
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similiqu accusantium nemo autem.",
+			"price": 0.0,
+			"deal": 0.0
+		}
+	},
+	{
+		"id": "11",
+		"name": "Shoe one",
+		"img": [
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			},
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			},
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			},
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			}
+		],
+		"info": {
+			"company": "Shoe Factory",
+			"name": "Sumer Limited Edition Sneakers",
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similiqu accusantium nemo autem.",
+			"price": 0.0,
+			"deal": 0.0
+		}
+	},
+	{
+		"id": "12",
+		"name": "Shoe one",
+		"img": [
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			},
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			},
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			},
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			}
+		],
+		"info": {
+			"company": "Shoe Factory",
+			"name": "Sumer Limited Edition Sneakers",
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similiqu accusantium nemo autem.",
+			"price": 0.0,
+			"deal": 0.0
+		}
+	},
+	{
+		"id": "13",
+		"name": "Shoe one",
+		"img": [
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			},
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			},
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			},
+			{
+				"preview": "https://westsiderc.org/wp-content/uploads/2019/08/Image-Not-Available.png"
+			}
+		],
+		"info": {
+			"company": "Shoe Factory",
+			"name": "Sumer Limited Edition Sneakers",
+			"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborumnumquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similiqu accusantium nemo autem.",
+			"price": 0.0,
 			"deal": 0.0
 		}
 	}
