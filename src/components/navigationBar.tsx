@@ -4,7 +4,7 @@ import { ReactComponent as CartIcon } from "../images/icon-cart.svg";
 import { ReactComponent as Logo } from "../images/logo.svg";
 import profile from "../images/image-avatar.png";
 import "../style/navigationBar.css";
-import "../style/home.css";
+import "../style/show.css";
 
 interface pageLocation {
 	data: string;

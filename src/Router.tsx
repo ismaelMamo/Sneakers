@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import "./style/home.css";
+import "./style/show.css";
 import "./style/main.css";
 
 import NavigationBar from "./components/navigationBar";
@@ -26,7 +26,7 @@ function Router() {
 		}
 	}
 	return (
-		<div>
+		<div id='all_container'>
 			<NavigationBar func={menuClickHandler} data='' />
 			<Burger />
 			<div id='home_body_container' className='outer_home_body_container'>
@@ -38,6 +38,7 @@ function Router() {
 					<Route path='/contact' element={<Contact />} />
 					<Route path='/men' element={<Men />} />
 					<Route path='/women' element={<Women />} />
+					<Route path='*' element={<Error />} />
 				</Routes>
 			</div>
 		</div>
