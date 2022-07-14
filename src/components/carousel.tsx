@@ -26,7 +26,7 @@ function Carousel({ data }: carouselImg) {
 		if (CarouselIndex > CarouselArr.length - 1) {
 			setCarouselIndex(2);
 			setTimeout(() => {
-				element.style.transition = `all 0s`;
+				element.style.transition = `transform 0s`;
 				element.style.transform = `translateY(-100%)`;
 			}, 500);
 		} else {
@@ -34,7 +34,7 @@ function Carousel({ data }: carouselImg) {
 				setCarouselIndex(CarouselIndex + 1);
 
 				element.style.transform = `translateY(-${CarouselIndex * 100}%)`;
-				element.style.transition = `all 0.5s`;
+				element.style.transition = `transform 0.5s`;
 			}, 3000);
 		}
 	}
