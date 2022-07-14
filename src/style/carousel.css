@@ -25,6 +25,8 @@
 	flex-direction: row;
 	align-items: center;
 	overflow: hidden;
+	-webkit-mask-image: linear-gradient(to top, transparent 1%, black 40%);
+	/* mask-image: linear-gradient(to top, transparent 1%, black 99%); */
 }
 #carousel_1_img.active {
 	margin-top: -50%;

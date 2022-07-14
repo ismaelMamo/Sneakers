@@ -52,7 +52,7 @@ function Show() {
 			.split("&")[1]
 			.split("=")[1];
 
-		fetch(" https://api.npoint.io/f7a5632acd9640448692", {
+		fetch(" https://api.npoint.io/54b06c0c5f2fbf8bc958", {
 			headers: {
 				"Content-Type": "application/json",
 				Accept: "application/json",
