@@ -61,8 +61,10 @@ function Show() {
 			.then((response) => response.json())
 			.then((propData) => {
 				propData.forEach((element: propData) => {
+					console.log(element.id + "==" + id);
 					if (element.id == id) {
 						setData(element);
+						console.log("passed");
 
 						setReady(true);
 					}
