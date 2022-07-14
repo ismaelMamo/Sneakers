@@ -17,7 +17,6 @@ function FlipText({ data }: Word) {
 				let letter: string = data[Index][i];
 				let temp: string[] = [...HtmlArr];
 				temp.push(letter);
-				console.log(HtmlArr);
 
 				setHtmlArr((prevState) => [...prevState, ...temp]);
 				if (i < data[Index].length - 1) {
