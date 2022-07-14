@@ -22,7 +22,7 @@ function FlipText({ data }: Word) {
 				if (i < data[Index].length - 1) {
 					DelayLoop(i + 1);
 				}
-			}, 1000 / (data[Index].length - 1));
+			}, 500 / (data[Index].length - 1));
 		}
 		DelayLoop(0);
 
