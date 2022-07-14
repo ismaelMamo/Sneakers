@@ -1,4 +1,4 @@
 # Sneakers
 A Responsive Sneakers online store
 
-Demo link:https://62cca655b899cc0008636b6a--gorgeous-dango-22db99.netlify.app/Men
+Demo link:https://62d05f044d0c8f0008adc63c--gorgeous-dango-22db99.netlify.app//Men
