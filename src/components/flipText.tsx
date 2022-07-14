@@ -36,13 +36,15 @@ function FlipText({ data }: Word) {
 
 	return (
 		<div id='flip_container'>
-			{HtmlArr.map((element, index) => {
-				return (
-					<div className='letter' key={index}>
-						{element}
-					</div>
-				);
-			})}
+			<div id='flip_container1'>
+				{HtmlArr.map((element, index) => {
+					return (
+						<div className='letter' key={index}>
+							{element}
+						</div>
+					);
+				})}
+			</div>
 		</div>
 	);
 }
