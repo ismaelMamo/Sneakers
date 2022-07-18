@@ -1,11 +1,34 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import up_divider from "../images/up_divider.png";
 import down_divider from "../images/down_divider.png";
 import FlipText from "../components/flipText";
+import ScrollTopBtn from "../components/scrollTopBtn";
+
 import "../style/home.css";
 
 import Carousel from "../components/carousel";
 function Home() {
+	useEffect(() => {
+		window.addEventListener("scroll", scroll_1_event_down);
+	}, []);
+
+	function scroll_1_event_down() {
+		if (window.pageYOffset > 400) {
+			window.removeEventListener("scroll", scroll_1_event_down);
+			window.addEventListener("scroll", scroll_1_event_up);
+			let element = document.getElementById("scroll_btn")!;
+			element.classList.remove("hidden");
+		}
+	}
+	function scroll_1_event_up() {
+		if (window.pageYOffset < 100) {
+			window.removeEventListener("scroll", scroll_1_event_up);
+			window.addEventListener("scroll", scroll_1_event_down);
+			let element = document.getElementById("scroll_btn")!;
+			element.classList.add("hidden");
+		}
+	}
+
 	return (
 		<div className='home_container'>
 			<Carousel
@@ -17,7 +40,7 @@ function Home() {
 			/>
 			<FlipText
 				data={[
-					["W", "E", "L", "L", "C", "O", "M", "E"],
+					["W", "E", "L", "C", "O", "M", "E"],
 					["T", "O"],
 					["S", "N", "E", "A", "K", "E", "R", "S"],
 				]}
@@ -138,6 +161,7 @@ function Home() {
 					<img id='down_divider' src={down_divider} />
 				</div>
 			</div>
+			<ScrollTopBtn />
 		</div>
 	);
 }

@@ -1,0 +1,43 @@
+.scroll_btn.hidden {
+	visibility: hidden;
+}
+
+.scroll_btn {
+	visibility: visible;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	right: 2%;
+	bottom: 5%;
+	height: 50px;
+	width: 50px;
+	background-color: gray;
+	opacity: 0.7;
+	border-radius: 50%;
+	cursor: pointer;
+	overflow: hidden;
+}
+#up_arrow {
+	color: white;
+	width: 50px;
+	height: 100px;
+}
+@media (max-width: 912px) {
+	.scroll_btn {
+		visibility: visible;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: sticky;
+		left: 92%;
+		bottom: 5%;
+		height: 50px;
+		width: 50px;
+		background-color: gray;
+		opacity: 0.7;
+		border-radius: 50%;
+		cursor: pointer;
+		overflow: hidden;
+	}
+}

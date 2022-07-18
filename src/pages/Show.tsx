@@ -64,8 +64,6 @@ function Show() {
 					console.log(element.id + "==" + id);
 					if (element.id == id) {
 						setData(element);
-						console.log("passed");
-
 						setReady(true);
 					}
 				});
