@@ -15,13 +15,9 @@ function Carousel({ data }: carouselImg) {
 		tempArr.unshift(tempArr[tempArr.length - 2]);
 		setCarouselArr(tempArr);
 		setLoading(false);
-	}, []);
+	}, [setCarouselArr, CarouselArr]);
 
 	useEffect(() => {
-		Tick();
-	}, [CarouselIndex]);
-
-	function Tick() {
 		let element = document.getElementById("hero_imgs_mapper")!;
 		if (CarouselIndex > CarouselArr.length - 1) {
 			setCarouselIndex(2);
@@ -37,7 +33,8 @@ function Carousel({ data }: carouselImg) {
 				element.style.transition = `transform 0.5s`;
 			}, 3000);
 		}
-	}
+	}, [CarouselIndex, CarouselArr, CarouselArr.length]);
+
 	return (
 		<div id='hero_container'>
 			<div id='hero_imgs'>
@@ -46,6 +43,7 @@ function Carousel({ data }: carouselImg) {
 						? CarouselArr.map((element, index) => {
 								return (
 									<img
+										alt={`shoe ${index}`}
 										key={index}
 										id={`carousel_${index}_img`}
 										className='carousel_img'

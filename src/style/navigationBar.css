@@ -88,14 +88,14 @@ ul li {
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
-	width: 5rem;
+	width: 4.5rem;
 }
 
 .nav_profile {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 5rem;
+	width: 4.5rem;
 	height: 5rem;
 }
 
@@ -200,14 +200,14 @@ ul li {
 		justify-content: center;
 		align-items: center;
 		cursor: pointer;
-		width: 5rem;
+		width: 4.5rem;
 	}
 
 	.nav_profile {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 5rem;
+		width: 4.5rem;
 		height: 5rem;
 	}
 
@@ -303,14 +303,14 @@ ul li {
 		justify-content: center;
 		align-items: center;
 		cursor: pointer;
-		width: 5rem;
+		width: 4.5rem;
 	}
 
 	.nav_profile {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 5rem;
+		width: 4.5rem;
 		height: 5rem;
 	}
 
