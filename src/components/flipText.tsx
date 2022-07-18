@@ -10,8 +10,6 @@ function FlipText({ data }: Word) {
 	const [Index, setIndex] = useState(0);
 
 	useEffect(() => {
-		function setingEx(temp: string[]) {}
-
 		function DelayLoop(i: number) {
 			setTimeout(() => {
 				let letter: string = data[Index][i];
@@ -32,7 +30,7 @@ function FlipText({ data }: Word) {
 				setIndex(Index + 1);
 			}
 		}, 3000);
-	}, [Index]);
+	}, [Index, data]);
 
 	return (
 		<div id='flip_container'>

@@ -17,8 +17,6 @@ type Sneakers = {
 	popup: (params: number) => void;
 };
 
-type popFunc = { func: (params: number) => void };
-
 function Display({ imageSrc, popup }: Sneakers) {
 	const [Images, setImages] = useState("");
 	const [ImagesIndex, setImagesIndex] = useState(0);
@@ -27,7 +25,7 @@ function Display({ imageSrc, popup }: Sneakers) {
 	useEffect(() => {
 		setData({ imageSrc, popup });
 		setImages(imageSrc?.img?.[0]?.preview);
-	}, []);
+	}, [imageSrc, popup]);
 
 	function changeDisplay(src: string, index: number) {
 		setImages(src);
@@ -37,6 +35,7 @@ function Display({ imageSrc, popup }: Sneakers) {
 	return (
 		<div className='main_img_container'>
 			<img
+				alt='Shoes'
 				src={Images}
 				className='main_img'
 				onClick={() => popup(ImagesIndex)}
@@ -46,6 +45,7 @@ function Display({ imageSrc, popup }: Sneakers) {
 					let prvClass = "preview_imags" + index;
 					return (
 						<img
+							alt={`Shoes ${index}`}
 							onClick={() => changeDisplay(data.preview, index)}
 							key={index}
 							src={data.preview}

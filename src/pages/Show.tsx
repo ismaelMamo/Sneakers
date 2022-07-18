@@ -4,7 +4,6 @@ import "../style/show.css";
 import Display from "../components/display";
 import ItemInfo from "../components/itemInfo";
 import Overlay from "../components/overlay";
-import Burger from "../components/burger";
 
 type propData = {
 	id: string;
@@ -20,10 +19,6 @@ type propData = {
 };
 
 function Show() {
-	//future tracking use
-	//const page: string = "";
-	function navigate(params: string) {}
-
 	const [Data, setData] = useState({
 		id: "",
 		name: "",
@@ -47,10 +42,6 @@ function Show() {
 
 	useEffect(() => {
 		let id = window.location.href.split("?")[1].split("&")[0].split("=")[1];
-		let category = window.location.href
-			.split("?")[1]
-			.split("&")[1]
-			.split("=")[1];
 
 		fetch(" https://api.npoint.io/54b06c0c5f2fbf8bc958", {
 			headers: {
@@ -62,7 +53,7 @@ function Show() {
 			.then((propData) => {
 				propData.forEach((element: propData) => {
 					console.log(element.id + "==" + id);
-					if (element.id == id) {
+					if (element.id === id) {
 						setData(element);
 						setReady(true);
 					}

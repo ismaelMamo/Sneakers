@@ -39,7 +39,7 @@ function ItemInfo({ all }: propData) {
 				("$" + (Info.price - Info.price * Info.deal).toFixed(2)).toString()
 			);
 		}
-	}, [Info, CurrentPrice, Deal, Price]);
+	}, [Info, CurrentPrice, Deal, Price, all.info]);
 
 	function AddQuantity() {
 		setQuantity(Quantity + 1);
@@ -55,8 +55,8 @@ function ItemInfo({ all }: propData) {
 			<div className='description'>{Info?.description}</div>
 			<div className='prices_container'>
 				<div className='current_price'>{CurrentPrice}</div>
-				{Deal != "0%" && <div className='deal'>{Deal}</div>}
-				{Deal != "0%" && <div className='price'>{Price}</div>}
+				{Deal !== "0%" && <div className='deal'>{Deal}</div>}
+				{Deal !== "0%" && <div className='price'>{Price}</div>}
 			</div>
 			<div className='action_container'>
 				<div className='quantity_container'>
