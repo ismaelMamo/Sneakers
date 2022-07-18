@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import Rating from "@mui/material/Rating";
 import Box from "@mui/material/Box";
 import "../style/sneakersCards.css";
@@ -12,8 +12,6 @@ type cardSetting = {
 };
 
 function SneakersCard({ price, rating, img, promo, starSize }: cardSetting) {
-	const [Promo, setPromo] = useState(promo);
-	const [PromoState, setPromoState] = useState("none");
 	useEffect(() => {
 		let element = document.getElementById("offer")!;
 		if (promo === "none") {
@@ -26,11 +24,11 @@ function SneakersCard({ price, rating, img, promo, starSize }: cardSetting) {
 	return (
 		<div className='card_main_container'>
 			<div className='upper_section_container'>
-				<img className='card_img' src={img} />
+				<img alt='shoes preview' className='card_img' src={img} />
 				<div className='card_info_container'>
 					<div className='preview_price'>${price}</div>
 					<div id='offer' className='offer'>
-						{Promo}
+						{promo}
 					</div>
 				</div>
 			</div>

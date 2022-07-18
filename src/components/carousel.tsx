@@ -15,7 +15,7 @@ function Carousel({ data }: carouselImg) {
 		tempArr.unshift(tempArr[tempArr.length - 2]);
 		setCarouselArr(tempArr);
 		setLoading(false);
-	}, [setCarouselArr, CarouselArr]);
+	}, [CarouselArr]);
 
 	useEffect(() => {
 		let element = document.getElementById("hero_imgs_mapper")!;
@@ -33,7 +33,7 @@ function Carousel({ data }: carouselImg) {
 				element.style.transition = `transform 0.5s`;
 			}, 3000);
 		}
-	}, [CarouselIndex, CarouselArr, CarouselArr.length]);
+	}, [CarouselIndex, CarouselArr]);
 
 	return (
 		<div id='hero_container'>
