@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 function Home() {
 	function navigate(params: string) {
 		window.location.href = `${window.location.origin}/${params}`;

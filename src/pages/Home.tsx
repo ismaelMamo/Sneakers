@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import up_divider from "../images/up_divider.png";
 import down_divider from "../images/down_divider.png";
 import FlipText from "../components/flipText";
@@ -10,7 +10,7 @@ import Carousel from "../components/carousel";
 function Home() {
 	useEffect(() => {
 		window.addEventListener("scroll", scroll_1_event_down);
-	}, []);
+	});
 
 	function scroll_1_event_down() {
 		if (window.pageYOffset > 400) {
@@ -101,7 +101,7 @@ function Home() {
 					non orci. Donec iaculis hendrerit orci vitae pharetra.
 				</div>
 				<div id='home_body_2'>
-					<img id='up_divider' src={up_divider} />
+					<img id='up_divider' alt='' src={up_divider} />
 					<div id='sub_home_body_2'>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
 						vulputate tellus sed nisi varius, in ultricies lacus porta.
@@ -158,7 +158,7 @@ function Home() {
 						finibus arcu lorem non orci. Donec iaculis hendrerit orci vitae
 						pharetra.
 					</div>
-					<img id='down_divider' src={down_divider} />
+					<img id='down_divider' alt='' src={down_divider} />
 				</div>
 			</div>
 			<ScrollTopBtn />
