@@ -1,0 +1,299 @@
+#mission_banner_container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 8rem;
+	width: 100%;
+	background-color: tomato;
+	color: white;
+}
+#mission_banner_1,
+#mission_banner_2,
+#mission_banner_3 {
+	width: 25%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.mission_text {
+	margin: 15%;
+	cursor: default;
+}
+#mission_icons_1,
+#mission_icons_2,
+#mission_icons_3 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100px;
+	height: 100px;
+	font-size: 60px;
+}
+#rotate-inner {
+	height: 60px;
+	width: 60px;
+	font-size: 60px;
+	transition: all 0.5s ease-in-out;
+}
+
+.card-container {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0 12px;
+	perspective: 900px;
+	text-align: center;
+}
+.card {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	transition: all 0.6s ease;
+	transform-style: preserve-3d;
+}
+.front {
+	position: absolute;
+	background: #ffffff;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	border-radius: 5px;
+	color: tomato;
+	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+	backface-visibility: hidden;
+}
+
+.back {
+	position: absolute;
+	background: #ffffff;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	border-radius: 5px;
+	color: gray;
+	box-shadow: 0 17px 45px 0 rgba(0, 0, 0, 0.3),
+		0 17px 17px 0 rgba(0, 0, 0, 0.15);
+	backface-visibility: hidden;
+}
+.front {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.back {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-container:hover .card {
+	transform: rotateY(180deg);
+}
+.back {
+	transform: rotateY(180deg);
+}
+
+.mission_text {
+	font-size: 125%;
+	font-family: "Malgun Gothic";
+}
+@media (min-width: 499px) and (max-width: 900px) {
+	#mission_banner_1,
+	#mission_banner_2,
+	#mission_banner_3 {
+		width: 30%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.mission_text {
+		margin: 15%;
+		cursor: default;
+	}
+	#mission_icons_1,
+	#mission_icons_2,
+	#mission_icons_3 {
+		width: 60px;
+		height: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	#rotate-inner {
+		height: 60px;
+		width: 60px;
+		font-size: 60px;
+	}
+
+	.card-container {
+		display: inline-block;
+		margin: 0 auto;
+		padding: 0 12px;
+		perspective: 540px;
+		text-align: center;
+	}
+	.card {
+		position: relative;
+		width: 60px;
+		height: 60px;
+		transition: all 0.6s ease;
+		transform-style: preserve-3d;
+	}
+	.front {
+		position: absolute;
+		background: #ffffff;
+		top: 0;
+		left: 0;
+		width: 60px;
+		height: 60px;
+		border-radius: 5px;
+		color: tomato;
+		box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3),
+			0 17px 17px 0 rgba(0, 0, 0, 0.15);
+		backface-visibility: hidden;
+	}
+
+	.back {
+		position: absolute;
+		background: #ffffff;
+		top: 0;
+		left: 0;
+		width: 60px;
+		height: 60px;
+		border-radius: 5px;
+		color: gray;
+		box-shadow: 0 17px 45px 0 rgba(0, 0, 0, 0.3),
+			0 17px 17px 0 rgba(0, 0, 0, 0.15);
+		backface-visibility: hidden;
+	}
+	.front {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.back {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.card-container:hover .card {
+		transform: rotateY(180deg);
+	}
+	.back {
+		transform: rotateY(180deg);
+	}
+	.mission_text {
+		font-size: 100%;
+		font-family: "Malgun Gothic";
+	}
+}
+@media (max-width: 499px) {
+	#mission_banner_container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		height: 6rem;
+		width: 100%;
+		background-color: tomato;
+		color: white;
+	}
+	#mission_banner_1,
+	#mission_banner_2,
+	#mission_banner_3 {
+		width: 30%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.mission_text {
+		margin: 15%;
+		cursor: default;
+	}
+	#mission_icons_1,
+	#mission_icons_2,
+	#mission_icons_3 {
+		width: 30px;
+		height: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	#rotate-inner {
+		height: 30px;
+		width: 30px;
+		font-size: 60px;
+	}
+
+	.card-container {
+		display: inline-block;
+		margin: 0 auto;
+		padding: 0 12px;
+		perspective: 270px;
+		text-align: center;
+	}
+	.card {
+		position: relative;
+		width: 30px;
+		height: 30px;
+		transition: all 0.6s ease;
+		transform-style: preserve-3d;
+	}
+	.front {
+		position: absolute;
+		background: #ffffff;
+		top: 0;
+		left: 0;
+		width: 30px;
+		height: 30px;
+		border-radius: 5px;
+		color: tomato;
+		box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3),
+			0 17px 17px 0 rgba(0, 0, 0, 0.15);
+		backface-visibility: hidden;
+	}
+
+	.back {
+		position: absolute;
+		background: #ffffff;
+		top: 0;
+		left: 0;
+		width: 30px;
+		height: 30px;
+		border-radius: 5px;
+		color: gray;
+		box-shadow: 0 17px 45px 0 rgba(0, 0, 0, 0.3),
+			0 17px 17px 0 rgba(0, 0, 0, 0.15);
+		backface-visibility: hidden;
+	}
+	.front {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.back {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.card-container:hover .card {
+		transform: rotateY(180deg);
+	}
+	.back {
+		transform: rotateY(180deg);
+	}
+	.mission_text {
+		font-size: 90%;
+		font-family: "Malgun Gothic";
+	}
+}

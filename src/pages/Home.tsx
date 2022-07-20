@@ -4,6 +4,7 @@ import down_divider from "../images/down_divider.png";
 import FlipText from "../components/flipText";
 import ScrollTopBtn from "../components/scrollTopBtn";
 
+import MissionCards from "../components/missionCards";
 import "../style/home.css";
 
 import Carousel from "../components/carousel";
@@ -46,6 +47,7 @@ function Home() {
 				]}
 			/>
 			<div>
+				<MissionCards />
 				<div id='home_body_1'>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
 					vulputate tellus sed nisi varius, in ultricies lacus porta. Curabitur
