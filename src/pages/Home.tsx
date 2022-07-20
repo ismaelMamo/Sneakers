@@ -11,21 +11,25 @@ import Carousel from "../components/carousel";
 function Home() {
 	useEffect(() => {
 		window.addEventListener("scroll", scroll_1_event_down);
+		return () => {
+			window.removeEventListener("scroll", scroll_1_event_down);
+			window.removeEventListener("scroll", scroll_1_event_up);
+		};
 	});
 
 	function scroll_1_event_down() {
 		if (window.pageYOffset > 400) {
+			const element = document.getElementById("scroll_btn")!;
 			window.removeEventListener("scroll", scroll_1_event_down);
 			window.addEventListener("scroll", scroll_1_event_up);
-			let element = document.getElementById("scroll_btn")!;
 			element.classList.remove("hidden");
 		}
 	}
 	function scroll_1_event_up() {
 		if (window.pageYOffset < 100) {
+			const element = document.getElementById("scroll_btn")!;
 			window.removeEventListener("scroll", scroll_1_event_up);
 			window.addEventListener("scroll", scroll_1_event_down);
-			let element = document.getElementById("scroll_btn")!;
 			element.classList.add("hidden");
 		}
 	}

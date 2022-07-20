@@ -18,21 +18,28 @@ function Carousel({ data }: carouselImg) {
 	}, [CarouselArr]);
 
 	useEffect(() => {
+		let word: any = setTimeout(() => {});
+		let letter: any = setTimeout(() => {});
 		let element = document.getElementById("hero_imgs_mapper")!;
 		if (CarouselIndex > CarouselArr.length - 1) {
-			setCarouselIndex(2);
-			setTimeout(() => {
+			console.log("if");
+			word = setTimeout(() => {
 				element.style.transition = `transform 0s`;
 				element.style.transform = `translateY(-100%)`;
-			}, 500);
+				setCarouselIndex(2);
+			}, 1000);
 		} else {
-			setTimeout(() => {
+			letter = setTimeout(() => {
 				setCarouselIndex(CarouselIndex + 1);
 
 				element.style.transform = `translateY(-${CarouselIndex * 100}%)`;
-				element.style.transition = `transform 0.5s`;
+				element.style.transition = `transform 1s`;
 			}, 3000);
 		}
+		return () => {
+			clearTimeout(letter);
+			clearTimeout(word);
+		};
 	}, [CarouselIndex, CarouselArr]);
 
 	return (
