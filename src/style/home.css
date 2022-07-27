@@ -1,12 +1,24 @@
 #home_body_1 {
-	height: 60rem;
 	width: 100%;
-	background-color: rgb(255, 255, 255);
+	background-color: #f8f9ff;
 	overflow: hidden;
+	background-image: url("https://img.wallpapersafari.com/desktop/1920/1080/40/68/Q3s1hO.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#up_divider {
+	margin-top: -10%;
+	object-fit: cover;
+}
+#down_divider {
+	object-fit: cover;
 }
 #home_body_2 {
+	position: absolute;
 	margin: 1rem 0rem 1rem 0rem;
 	width: 100%;
+	background-color: #f8f9ff;
 	display: flex;
 	flex-direction: column;
 }
@@ -15,4 +27,7 @@
 	width: 100%;
 	background-color: tomato;
 	color: white;
+}
+#home_body_containers {
+	position: relative;
 }

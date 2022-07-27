@@ -26,9 +26,11 @@ function SneakersCard({ price, rating, img, promo, starSize }: cardSetting) {
 			<div className='upper_section_container'>
 				<img alt='shoes preview' className='card_img' src={img} />
 				<div className='card_info_container'>
-					<div className='preview_price'>${price}</div>
+					<div className='preview_price'>
+						<div className='price_text'>${price}</div>
+					</div>
 					<div id='offer' className='offer'>
-						{promo}
+						<div className='offer_text'>{promo}</div>
 					</div>
 				</div>
 			</div>

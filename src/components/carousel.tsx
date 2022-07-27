@@ -22,7 +22,6 @@ function Carousel({ data }: carouselImg) {
 		let letter: any = setTimeout(() => {});
 		let element = document.getElementById("hero_imgs_mapper")!;
 		if (CarouselIndex > CarouselArr.length - 1) {
-			console.log("if");
 			word = setTimeout(() => {
 				element.style.transition = `transform 0s`;
 				element.style.transform = `translateY(-100%)`;
