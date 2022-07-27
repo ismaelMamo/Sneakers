@@ -36,6 +36,7 @@
 	text-decoration: none;
 	color: #000;
 }
+
 .offer {
 	background-color: aliceblue;
 	height: 100%;
@@ -43,15 +44,22 @@
 	line-height: 190%;
 	max-width: 40%;
 	text-align: center;
-	border-radius: 25%;
-	margin: 2%;
+	margin: 2% 7% 2% 2%;
 	padding: 0% 2% 0% 2%;
 	color: rgb(255, 255, 255);
 	background-color: red;
 	font-weight: bolder;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: skew(40deg, 0);
+	overflow: hidden;
+	position: relative;
 }
 .offer.hide {
 	display: none;
+}
+.offer_text {
+	-webkit-transform: skew(-40deg, 0);
+	position: relative;
 }
 .preview_price {
 	background-color: aliceblue;
@@ -59,10 +67,17 @@
 	font-size: 100%;
 	line-height: 190%;
 	text-align: center;
-	border-radius: 25%;
-	margin: 2%;
+	margin: 2% 2% 2% 7%;
 	padding: 0% 2% 0% 2%;
 	font-weight: bolder;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: skew(40deg, 0);
+	overflow: hidden;
+	position: relative;
+}
+.price_text {
+	-webkit-transform: skew(-40deg, 0);
+	position: relative;
 }
 .star_Rating {
 	display: flex;

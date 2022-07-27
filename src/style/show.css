@@ -1,5 +1,6 @@
 #all_container {
 	box-sizing: border-box;
+	background-color: #f8f9ff;
 	height: auto;
 	padding-bottom: 1rem;
 }
@@ -12,6 +13,7 @@
 	height: 100%;
 }
 .outer_home_body_container {
+	background-color: #f8f9ff;
 	height: calc(100vh - 4rem);
 }
 .home_body_container {
@@ -20,7 +22,7 @@
 	justify-content: space-between;
 	height: 100%;
 	width: 100%;
-	background: rgb(255, 255, 255);
+	background-color: #f8f9ff;
 	overflow: hidden;
 	filter: blur(0);
 	transition: blur 0.2s ease-in-out;

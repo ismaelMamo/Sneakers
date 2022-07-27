@@ -1,10 +1,7 @@
 #home_container {
 	width: 100%;
 }
-#up_divider,
-#down_divider {
-	object-fit: cover;
-}
+
 #hero_container {
 	height: 300px;
 	width: 100%;
