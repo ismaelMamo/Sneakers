@@ -1,7 +1,7 @@
 #all_container {
 	box-sizing: border-box;
 	background-color: #f8f9ff;
-	height: auto;
+	height: 100%;
 	padding-bottom: 1rem;
 }
 .main_body {
@@ -32,7 +32,8 @@
 	width: 200px;
 	margin-left: -500px;
 	background: rgb(255, 255, 255);
-	position: absolute;
+	position: fixed;
+	margin-top: 4rem;
 	z-index: 1;
 	box-shadow: 0 rgba(0, 0, 0, 0.8);
 	transition: margin-left 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -105,6 +106,7 @@
 	}
 	.side_menu.active {
 		margin-left: 0px;
+		margin-top: 4rem;
 	}
 	.nav_menu {
 		display: flex;

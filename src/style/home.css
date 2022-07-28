@@ -2,7 +2,8 @@
 	width: 100%;
 	background-color: #f8f9ff;
 	overflow: hidden;
-	background-image: url("https://img.wallpapersafari.com/desktop/1920/1080/40/68/Q3s1hO.jpg");
+	background: #c2c4d4
+		url("https://img.wallpapersafari.com/desktop/1920/1080/40/68/Q3s1hO.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -23,11 +24,26 @@
 	flex-direction: column;
 }
 #sub_home_body_2 {
-	height: 80rem;
 	width: 100%;
 	background-color: tomato;
 	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 #home_body_containers {
 	position: relative;
+}
+
+@media (min-width: 500px) and (max-width: 912px) {
+	#up_divider {
+		margin-top: -15%;
+		object-fit: cover;
+	}
+}
+@media (max-width: 499.9px) {
+	#up_divider {
+		margin-top: -15%;
+		object-fit: cover;
+	}
 }
