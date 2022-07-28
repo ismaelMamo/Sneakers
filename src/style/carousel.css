@@ -3,6 +3,7 @@
 }
 
 #hero_container {
+	margin-top: 4rem;
 	height: 300px;
 	width: 100%;
 }

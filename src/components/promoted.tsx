@@ -62,8 +62,9 @@ function Promoted({ text, ids }: Data) {
 	return (
 		<div id='promoted_container'>
 			<div id='type_container'>
+				<div id='type_decoration_1'></div>
 				<div id='type_text'>{text}</div>
-				<div id='type_decoration'></div>
+				<div id='type_decoration_2'></div>
 			</div>
 			<div id='sample_container'>
 				<div className='sample'>

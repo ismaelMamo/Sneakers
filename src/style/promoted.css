@@ -20,18 +20,29 @@
 	width: 60%;
 	color: white;
 	font-size: 5vw;
+	cursor: default;
 	font-weight: lighter;
 	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-#type_decoration {
+#type_decoration_1 {
+	height: 0.3rem;
+	width: 60%;
+	background-color: rgb(135, 206, 235);
+	transition: all 0.5s ease-in-out;
+}
+#type_decoration_2 {
 	height: 0.3rem;
 	width: 60%;
 	background-color: white;
 	transition: all 0.5s ease-in-out;
 }
-#type_container:hover #type_decoration {
+#type_container:hover #type_decoration_2 {
 	width: 20%;
-	background-color: rgb(80, 188, 231);
+	background-color: white;
+}
+#type_container:hover #type_decoration_1 {
+	width: 40%;
+	background-color: tomato;
 }
 #sample_container {
 	height: 100%;
@@ -44,4 +55,26 @@
 .promoted_img {
 	height: 100%;
 	width: 100%;
+}
+@media (min-width: 500px) and (max-width: 912px) {
+	#promoted_container {
+		padding: 25% 0rem 25% 0rem;
+		width: 100%;
+		aspect-ratio: 3/1;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+}
+@media (max-width: 499.9px) {
+	#promoted_container {
+		padding: 30% 0rem 30% 0rem;
+		width: 100%;
+		aspect-ratio: 3/1;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
 }
