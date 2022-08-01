@@ -4,6 +4,8 @@ html {
 }
 .nav_container {
 	position: fixed;
+	top: 0%;
+	left: 0%;
 	box-sizing: border-box;
 	display: flex;
 	justify-content: space-between;
