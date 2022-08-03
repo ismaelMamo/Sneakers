@@ -1,0 +1,50 @@
+#collection_main_container {
+	margin-top: 4rem;
+	height: auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	justify-content: center;
+}
+#collection_main {
+	margin-top: 2rem;
+	height: 100%;
+	width: 70%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.collection_card {
+	height: 30rem;
+	width: 20rem;
+	margin: 2rem;
+
+	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+	aspect-ratio: 2/3;
+	cursor: pointer;
+}
+#mens_collection {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+#womens_collection {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+#womens_collection:hover,
+#mens_collection:hover {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: brightness(0.95);
+}
+.collection_name {
+	height: 1rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	font-size: 150%;
+	font-weight: 500;
+}
