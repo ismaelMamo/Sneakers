@@ -2,6 +2,7 @@
 A Sneakers online store demo
 
 link: https://main--gorgeous-dango-22db99.netlify.app/
+> **Note:** This site demo was made with **Responsive design** in mind, feel free to try it out on any device.
 
 ## Popping text
 ![Popping text](Gifs/Welcom_text.gif)
